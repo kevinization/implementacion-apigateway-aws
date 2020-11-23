@@ -1,27 +1,97 @@
-<h2>Registrar empleado: </h2>
+
 <hr>
-<form>
-    <div class="form-group">
-        <p>Id: <input type="text" name="id" [(ngModel)]="empleado.id"></p>
-        <p>Nombre: <input type="text" name="nombre" [(ngModel)]="empleado.nombre"></p>
-        <p>Apellido: <input type="text" name="apellido" [(ngModel)]="empleado.apellido"></p>
-        <p>Puesto: <input type="text" name="puesto" [(ngModel)]="empleado.puesto"></p>
-        <p>Salario: <input type="text" name="salario" [(ngModel)]="empleado.salario"></p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Registro de Empleados</h2>
+        </div>
     </div>
 
-    <button type="button" (click)="registrar()" class="btn btn-primary">
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-        </svg>
-        Registrar
-    </button>
-</form>
+</div>
 
-<h2>Empleados registrados</h2>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="https://lh3.googleusercontent.com/proxy/BhEmgx_d_7hblY5p-UstJ8b5s93MBdX3TUC5ABTuULpnQAaypZMmOeke7ohLreeIgKTs18I1g_mfZt8O7P4aFYX8iocIEZ_1UXDAdfRAHfuN0w-j8vN0" class="card-img" alt="">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+            <form> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group center">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">Id</span>
+                                    </div>
+                                    <input type="text" class="form-control"aria-label="Username" aria-describedby="basic-addon1"name="id" [(ngModel)]="empleado.id">
+                                </div>
+            
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">nombre</span>
+                                    </div>
+                                    <input type="text" class="form-control"aria-label="Username" aria-describedby="basic-addon1"name="nombre" [(ngModel)]="empleado.nombre">
+                                </div>        
+                                      
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">Apellido</span>
+                                    </div>
+                                    <input type="text" class="form-control"aria-label="Username" aria-describedby="basic-addon1"name="apellido" [(ngModel)]="empleado.apellido">
+                                </div>       
+                                
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">Puesto</span>
+                                    </div>
+                                    <input type="text" class="form-control"aria-label="Username" aria-describedby="basic-addon1"name="puesto" [(ngModel)]="empleado.puesto">
+                                </div>  
+            
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">Sueldo</span>
+                                    </div>
+                                    <input type="text" class="form-control"aria-label="Username" aria-describedby="basic-addon1"name="salario" [(ngModel)]="empleado.salario">
+                                </div>                      
+                               
+                                <button type="button" (click)="registrar()" class="btn btn-primary">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg>
+                                    Registrar
+                                </button>
+                            </div>
+                        
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+            
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 <hr>
 
 <table class="table">
-    <thead>
+    <thead class="thead-dark"> 
         <tr>
             <th scope="col">id</th>
             <th scope="col">nombre</th>
